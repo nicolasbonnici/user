@@ -1,5 +1,5 @@
 <?php
-namespace modules\user\Controllers;
+namespace bundles\user\Controllers;
 
 /**
  * User HomeController
