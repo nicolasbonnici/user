@@ -1,12 +1,15 @@
 <?php
-$tr['hello'] = 'Bonjour';
-$tr['update'] = 'Mettre à jour';
-$tr['save'] = 'Sauvegarder';
-$tr['cancel'] = 'Annuler';
-$tr['delete'] = 'Supprimer';
-
-$tr['update_success'] = 'Enregistrement correctement mis à jour';
-$tr['update_error'] = 'Une erreur est survenue lors de la mis à jour';
-
-$tr['access_denied'] = 'Veuillez verifier vos permissions';
+/*
+ * user/profile
+ */
+$tr['avatar'] = "Avatar";
+$tr['username'] = "Nom d'utilisateur";
+$tr['email'] = "Adresse email";
+$tr['your_password'] = "Votre mot de passe";
+$tr['input_password'] = "Entrez le mot de passe actuel";
+$tr['input_new_password'] = "Entrez le nouveau mot de passe";
+$tr['confirm_new_password'] = "Confirmez le nouveau mot de passe";
+$tr['password_update_success'] = "Mot de passe changer avec succès!";
+$tr['password_update_error'] = "Une erreur est survenue lors de la modification de votre mot de passe...";
+$tr['update_password'] = "Mettre à jour le mot de passe";
 ?>

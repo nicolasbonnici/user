@@ -21,22 +21,22 @@ class HomeController extends \Library\Core\Auth
 
     public function profileAction()
     {
-        if (isset($this->_params['password'], $this->_params['passwordNew1'], $this->_params['passwordNew2']) && ! empty($this->_params['password']) && ! empty($this->_params['passwordNew1']) && ! empty($this->_params['passwordNew2']) && $this->_params['passwordNew1'] === $this->_params['passwordNew2']) {
+        if (isset($this->aParams['password'], $this->aParams['passwordNew1'], $this->aParams['passwordNew2']) && ! empty($this->aParams['password']) && ! empty($this->aParams['passwordNew1']) && ! empty($this->aParams['passwordNew2']) && $this->aParams['passwordNew1'] === $this->aParams['passwordNew2']) {
             $oUser = new \app\Entities\User();
             try {
                 $oUser->loadByParameters(array(
                     'iduser' => $this->_session['iduser'],
                     'mail' => $this->_session['mail'],
-                    'pass' => $this->formatPassword($this->_params['password']),
+                    'pass' => $this->formatPassword($this->aParams['password']),
                     'created' => $this->_session['created']
                 ));
             } catch (CoreAuthControllerException $oException) {}
             if ($oUser->isLoaded()) {
                 
-                $oUser->pass = $this->formatPassword($this->_params['passwordNew1']);
-                $this->_view['passwordUpdate'] = $oUser->update();
+                $oUser->pass = $this->formatPassword($this->aParams['passwordNew1']);
+                $this->aView['passwordUpdate'] = $oUser->update();
             } else {
-                $this->_view['passwordUpdate'] = FALSE;
+                $this->aView['passwordUpdate'] = FALSE;
             }
         }
         
