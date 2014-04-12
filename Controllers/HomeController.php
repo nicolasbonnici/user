@@ -40,7 +40,7 @@ class HomeController extends \Library\Core\Auth
             }
         }
         
-        $this->render('user/profile.tpl');
+        $this->oView->render($this->aView, 'user/profile.tpl');
     }
 
     private function formatPassword($sPassword)
