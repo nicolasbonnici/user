@@ -26,9 +26,9 @@
             <label for="" class="col-sm-4 control-label">{{tr['username']}}</label>
             <div class="col-sm-8">
                 <a href="#" class="ui-editable" data-type="text" data-entity="User"
-                    data-url="/backend/crud/update/id/{{aSession['iduser']}}" data-pk="{{aSession['iduser']}}"
+                    data-url="/crud/update/index/id/{{aSession['iduser']}}" data-pk="{{aSession['iduser']}}"
                     data-name="firstname">{{aSession['firstname']}}</a>&nbsp; <a href="#" class="ui-editable"
-                    data-type="text" data-entity="User" data-url="/backend/crud/update/id/{{aSession['iduser']}}"
+                    data-type="text" data-entity="User" data-url="/crud/update/id/{{aSession['iduser']}}"
                     data-pk="{{aSession['iduser']}}" data-name="lastname">{{aSession['lastname']}}</a>&nbsp;
             </div>
         </div>
@@ -36,7 +36,7 @@
             <label for="" class="col-sm-4 control-label">{{tr['email']}}</label>
             <div class="col-sm-8">
                 <a href="#" class="ui-editable" data-type="email" data-entity="User"
-                    data-url="/backend/crud/update/id/{{aSession['iduser']}}" data-pk="{{aSession['iduser']}}"
+                    data-url="/crud/update/index/id/{{aSession['iduser']}}" data-pk="{{aSession['iduser']}}"
                     data-name="mail">{{aSession['mail']}}</a>&nbsp;
             </div>
         </div>
