@@ -21,7 +21,7 @@ class HomeController extends \Library\Core\Auth
     {}
 
     /**
-     * Show user profile
+     * Show current logged user profile
      */
     public function profileAction()
     {
