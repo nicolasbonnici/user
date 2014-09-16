@@ -27,7 +27,7 @@ class HomeController extends \Library\Core\Auth
     {
         // Update account password
         if (isset($this->aParams['password'], $this->aParams['passwordNew1'], $this->aParams['passwordNew2']) && ! empty($this->aParams['password']) && ! empty($this->aParams['passwordNew1']) && ! empty($this->aParams['passwordNew2']) && $this->aParams['passwordNew1'] === $this->aParams['passwordNew2']) {
-            $oUser = new \app\Entities\User();
+            $oUser = new \bundles\user\Entities\User();
             try {
                 $oAuthModel = Auth();
                 $oUser->loadByParameters(array(

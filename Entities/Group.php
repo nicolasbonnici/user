@@ -5,7 +5,7 @@ namespace bundles\user\Entities;
 /**
  * \app\Entity\User Group Entity
  *
- * @see \app\Entities\User
+ * @see \bundles\user\Entities\User
  * @author infradmin
  */
 class Group extends \Library\Core\Entity {
