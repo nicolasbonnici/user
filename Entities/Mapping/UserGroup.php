@@ -11,7 +11,7 @@ namespace bundles\user\Entities\Mapping;
 class UserGroup extends \Library\Core\Entity {
 
     const ENTITY = 'UserGroup';
-    const TABLE_NAME = 'userGroups';
+    const TABLE_NAME = 'userGroup';
     const PRIMARY_KEY = 'idusergroup';
 
     /**
